@@ -7,7 +7,7 @@ echo "Adding permissions"
 sudo usermod -a -G docker ec2-user
 
 echo "Installing docker-compose"
-sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) $
+sudo wget https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)
 
 sudo chmod +x /usr/local/bin/docker-compose
 
