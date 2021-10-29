@@ -1,5 +1,10 @@
 set -e
 
+# For ubuntu
+# curl -fsSL https://get.docker.com -o get-docker.sh
+# sh get-docker.sh
+
+
 echo "Installing docker"
 sudo yum install docker
 
