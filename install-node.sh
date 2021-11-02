@@ -9,4 +9,6 @@ nvm install node
 
 node -e "console.log('Running Node.js ' + process.version)"
 
+source .bashrc
+
 npm i -g yarn
