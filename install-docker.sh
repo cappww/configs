@@ -20,4 +20,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose version
 
+echo "Enabaling docker daemon to start on boot"
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+
 echo "done"
