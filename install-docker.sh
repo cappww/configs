@@ -12,9 +12,7 @@ echo "Adding permissions"
 sudo usermod -a -G docker ec2-user # Have the script detect the name of the current user
 
 echo "Installing docker-compose"
-sudo wget https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)
-
-sudo mv docker-compose-Linux* /usr/local/bin/docker-compose -o /usr/local/bin/docker-compose
+sudo wget https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 
 sudo chmod +x /usr/local/bin/docker-compose
 
