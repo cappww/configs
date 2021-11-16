@@ -6,7 +6,7 @@ set -e
 
 
 echo "Installing docker"
-sudo yum install docker
+sudo yum install docker -y
 
 echo "Adding permissions"
 sudo usermod -a -G docker ec2-user # Have the script detect the name of the current user
